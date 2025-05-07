@@ -1,0 +1,27 @@
+services:
+
+  db:
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    networks:
+      - app-network
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: corporationy
+
+  app:
+    image: dlatfullin/corporationy
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - app-network
+    environment:
+      DB_HOST: db
+
+networks:
+  app-network:
+    driver: bridge
