@@ -28,5 +28,3 @@ dist-ssr
 .vs/
 bin/
 obj/
-
-.env
