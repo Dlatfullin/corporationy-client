@@ -37,7 +37,7 @@ jobs:
                 replicas: 1
                 placement:
                   constraints:
-                    - node.hostname == docker-node-1
+                    - node.hostname == docker-node-3
               ports:
                 - "80:80"
           EOF
