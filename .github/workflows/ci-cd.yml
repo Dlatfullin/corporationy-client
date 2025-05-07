@@ -38,8 +38,6 @@ jobs:
                 placement:
                   constraints:
                     - node.hostname == docker-node-3
-              ports:
-                - "80:80"
           EOF
 
       - name: Deploy to Docker Swarm
