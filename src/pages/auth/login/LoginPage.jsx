@@ -67,7 +67,7 @@ const LoginPage = () => {
             <div className="flex-1 flex flex-col justify-center items-center">
                 <form className="flex gap-4 flex-col" onSubmit={handleSubmit}>
                     <XSvg className="w-24 lg:hidden fill-pink-900" />
-                    <h1 className="text-4xl font-extrabold text-pink-900">Let's go.?!x</h1>
+                    <h1 className="text-4xl font-extrabold text-pink-900">Let's go.</h1>
                     <label className="input input-bordered rounded flex items-center gap-2 border-pink-400 bg-pink-100">
                         <MdOutlineMail className="text-pink-900" />
                         <input
