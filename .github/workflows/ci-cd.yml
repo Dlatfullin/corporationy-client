@@ -37,7 +37,7 @@ jobs:
                 replicas: 1
                 placement:
                   preferences:
-                    - spread: docker-node-3
+                    - spread: node.hostname
           EOF
 
       - name: Deploy to Docker Swarm
