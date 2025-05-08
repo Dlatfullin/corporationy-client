@@ -36,8 +36,8 @@ jobs:
               deploy:
                 replicas: 1
                 placement:
-                  constraints:
-                    - node.hostname == docker-node-3
+                  preferences:
+                    - spread: docker-node-3
           EOF
 
       - name: Deploy to Docker Swarm
