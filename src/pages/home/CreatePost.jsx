@@ -173,7 +173,7 @@ const CreatePost = () => {
                     disabled={isCreating || isAddingImage || isUploading}
                 />
                 <textarea
-                    className="textarea w-full p-0 text-lg resize-none border-none focus:outline-none bg-pink-200 text-pink-900 placeholder-pink-700 font-semibold"
+                    className="textarea w-full p-0 text-lg resize-none border-none focus:outline-none bg-pink-200 text-pink-900 placeholder-pink-700 font-semibold rounded-none"
                     placeholder="What is happening?!"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
