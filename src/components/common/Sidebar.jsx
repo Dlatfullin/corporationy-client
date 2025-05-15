@@ -52,15 +52,6 @@ const Sidebar = () => {
                     </li>
                     <li className='flex justify-center md:justify-start'>
                         <Link
-                            to='/notifications'
-                            className='flex gap-3 items-center hover:bg-pink-300 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer text-pink-900'
-                        >
-                            <IoNotifications className='w-6 h-6' />
-                            <span className='text-lg hidden md:block'>Notifications</span>
-                        </Link>
-                    </li>
-                    <li className='flex justify-center md:justify-start'>
-                        <Link
                             to={`/profile/${authUser?.username}`}
                             className='flex gap-3 items-center hover:bg-pink-300 transition-all rounded-full duration-300 py-2 pl-2 pr-4 max-w-fit cursor-pointer text-pink-900'
                         >
@@ -81,7 +72,7 @@ const Sidebar = () => {
                         </div>
                         <div className='flex justify-between flex-1'>
                             <div className='hidden md:block'>
-                                <p className='text-pink-900 font-bold text-sm w-20 truncate'>
+                                <p className='text-pink-900 font-bold text-sm w-30 truncate'>
                                     {authUser?.fullName}
                                 </p>
                                 <p className='text-pink-700 text-sm'>

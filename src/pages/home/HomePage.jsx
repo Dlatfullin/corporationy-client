@@ -21,15 +21,6 @@ const HomePage = () => {
                             <div className='absolute bottom-0 w-10 h-1 rounded-full bg-pink-500'></div>
                         )}
                     </div>
-                    <div
-                        className='flex justify-center flex-1 p-3 hover:bg-pink-300 transition duration-300 cursor-pointer relative text-pink-900'
-                        onClick={() => setFeedType("following")}
-                    >
-                        Following
-                        {feedType === "following" && (
-                            <div className='absolute bottom-0 w-10 h-1 rounded-full bg-pink-500'></div>
-                        )}
-                    </div>
                 </div>
 
                 {/* CREATE POST INPUT */}
