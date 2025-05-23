@@ -55,7 +55,7 @@ const useSubscribe = () => {
       }
     },
     onSuccess: (data) => {
-      toast.success(data.subscribed ? "Subscribed successfully" : "Unsubscribed successfully");
+      toast.success("Subscribed/Unsubscribed successfully");
       queryClient.invalidateQueries(["authUser"]);
       queryClient.invalidateQueries(["userProfile"]);
       queryClient.invalidateQueries(["isSubscribed"]);
